@@ -4,167 +4,111 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fernanda Santana | Especialista em Empréstimos</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+  <meta name="description" content="Especialista em empréstimos consignados. Atendimento humanizado para todo o Brasil. Sem taxa, sem burocracia." />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-
     :root {
-      --green-900: #0f2318;
-      --green-800: #1a3a2a;
-      --green-700: #22503a;
-      --green-600: #2d6a4f;
-      --green-500: #3a8c66;
-      --green-400: #4db37e;
-      --green-300: #6ee09e;
-      --green-100: #e8f5ee;
-      --green-50:  #f2faf5;
-      --wpp:       #25D366;
-      --white:     #ffffff;
-      --gray-900:  #111816;
-      --gray-700:  #3a3a3a;
-      --gray-500:  #6b6b6b;
-      --gray-200:  #e4ede8;
+      --green-900: #0f2318; --green-800: #1a3a2a; --green-700: #22503a;
+      --green-600: #2d6a4f; --green-500: #3a8c66; --green-400: #4db37e;
+      --green-300: #6ee09e; --green-100: #e8f5ee; --green-50: #f2faf5;
+      --wpp: #25D366; --white: #ffffff;
+      --gray-900: #111816; --gray-700: #3a3a3a; --gray-500: #6b6b6b; --gray-200: #e4ede8;
       --ff-serif: 'Playfair Display', Georgia, serif;
-      --ff-sans:  'DM Sans', sans-serif;
+      --ff-sans: 'DM Sans', sans-serif;
     }
-
     body { font-family: var(--ff-sans); color: var(--gray-900); background: var(--white); -webkit-font-smoothing: antialiased; }
     a { text-decoration: none; color: inherit; }
-
     .container { max-width: 1080px; margin: 0 auto; padding: 0 28px; }
-    .section-label {
-      display: inline-block; font-size: 10.5px; font-weight: 600;
-      letter-spacing: 3px; text-transform: uppercase; color: var(--green-400); margin-bottom: 14px;
-    }
+    .section-label { display: inline-block; font-size: 10.5px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: var(--green-400); margin-bottom: 14px; }
 
     /* NAV */
-    header {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 999;
-      background: rgba(15,35,24,.97); backdrop-filter: blur(10px);
-      border-bottom: 1px solid rgba(255,255,255,.06);
-    }
-    .nav-inner {
-      max-width: 1080px; margin: 0 auto; padding: 0 28px;
-      height: 66px; display: flex; align-items: center; justify-content: space-between;
-    }
+    header { position: fixed; top: 0; left: 0; right: 0; z-index: 999; background: rgba(15,35,24,.97); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255,255,255,.06); }
+    .nav-inner { max-width: 1080px; margin: 0 auto; padding: 0 28px; height: 66px; display: flex; align-items: center; justify-content: space-between; }
     .nav-brand .name { font-family: var(--ff-serif); font-size: 17px; font-weight: 700; color: var(--white); display: block; }
     .nav-brand .sub { font-size: 9px; font-weight: 500; letter-spacing: 2.5px; text-transform: uppercase; color: var(--green-400); display: block; }
-    .btn-wpp-nav {
-      display: flex; align-items: center; gap: 8px;
-      background: var(--wpp); color: var(--white); font-size: 13px; font-weight: 600;
-      padding: 9px 22px; border-radius: 50px; transition: filter .2s, transform .15s;
-    }
+    .btn-wpp-nav { display: flex; align-items: center; gap: 8px; background: var(--wpp); color: var(--white); font-size: 13px; font-weight: 600; padding: 9px 22px; border-radius: 50px; transition: filter .2s, transform .15s; }
     .btn-wpp-nav:hover { filter: brightness(1.08); transform: translateY(-1px); }
 
     /* HERO */
-    .hero {
-      min-height: 100vh; padding: 140px 24px 80px;
-      display: flex; align-items: center; justify-content: center;
-      background:
-        radial-gradient(ellipse 80% 60% at 50% 30%, rgba(64,179,126,.22) 0%, transparent 70%),
-        linear-gradient(155deg, var(--green-900) 0%, var(--green-700) 55%, var(--green-800) 100%);
-      text-align: center; position: relative; overflow: hidden;
-    }
-    .hero::after {
-      content: ''; position: absolute; inset: 0; pointer-events: none; opacity: .45;
-      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%234db37e' fill-opacity='0.06'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E") repeat;
-    }
+    .hero { min-height: 100vh; padding: 140px 24px 80px; display: flex; align-items: center; justify-content: center; background: radial-gradient(ellipse 80% 60% at 50% 30%, rgba(64,179,126,.22) 0%, transparent 70%), linear-gradient(155deg, var(--green-900) 0%, var(--green-700) 55%, var(--green-800) 100%); text-align: center; position: relative; overflow: hidden; }
+    .hero::after { content: ''; position: absolute; inset: 0; pointer-events: none; opacity: .45; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%234db37e' fill-opacity='0.06'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E") repeat; }
     .hero-content { position: relative; z-index: 1; max-width: 680px; }
-    .hero-badge {
-      display: inline-flex; align-items: center; gap: 9px;
-      background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.18);
-      color: var(--white); font-size: 11px; font-weight: 500;
-      letter-spacing: 2.5px; text-transform: uppercase;
-      padding: 8px 20px; border-radius: 50px; margin-bottom: 36px;
-    }
+    .hero-badge { display: inline-flex; align-items: center; gap: 9px; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.18); color: var(--white); font-size: 11px; font-weight: 500; letter-spacing: 2.5px; text-transform: uppercase; padding: 8px 20px; border-radius: 50px; margin-bottom: 36px; }
     .dot { width: 6px; height: 6px; background: var(--green-400); border-radius: 50%; animation: pulse 2s infinite; }
     @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.5;transform:scale(.8)} }
     .hero h1 { font-family: var(--ff-serif); font-size: clamp(36px,6vw,66px); line-height: 1.13; color: var(--white); margin-bottom: 22px; }
     .hero h1 em { color: var(--green-400); font-style: italic; }
     .hero-desc { color: rgba(255,255,255,.72); font-size: 16px; line-height: 1.75; max-width: 460px; margin: 0 auto 44px; }
     .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; }
-    .btn-primary {
-      display: inline-flex; align-items: center; gap: 9px;
-      background: var(--wpp); color: var(--white); font-size: 15px; font-weight: 600;
-      padding: 14px 30px; border-radius: 50px;
-      box-shadow: 0 8px 28px rgba(37,211,102,.4);
-      transition: transform .2s, box-shadow .2s;
-    }
+    .btn-primary { display: inline-flex; align-items: center; gap: 9px; background: var(--wpp); color: var(--white); font-size: 15px; font-weight: 600; padding: 14px 30px; border-radius: 50px; box-shadow: 0 8px 28px rgba(37,211,102,.4); transition: transform .2s, box-shadow .2s; }
     .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 14px 36px rgba(37,211,102,.5); }
-    .btn-ghost {
-      display: inline-flex; align-items: center; gap: 8px;
-      background: transparent; border: 1.5px solid rgba(255,255,255,.35);
-      color: var(--white); font-size: 15px; font-weight: 500;
-      padding: 14px 30px; border-radius: 50px;
-      transition: background .2s, border-color .2s;
-    }
-    .btn-ghost:hover { background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.55); }
-    .hero-pills {
-      display: flex; gap: 28px; flex-wrap: wrap; justify-content: center;
-      margin-top: 60px; padding-top: 36px; border-top: 1px solid rgba(255,255,255,.12);
-    }
+    .btn-ghost { display: inline-flex; align-items: center; gap: 8px; background: transparent; border: 1.5px solid rgba(255,255,255,.35); color: var(--white); font-size: 15px; font-weight: 500; padding: 14px 30px; border-radius: 50px; transition: background .2s; }
+    .btn-ghost:hover { background: rgba(255,255,255,.08); }
+    .hero-pills { display: flex; gap: 28px; flex-wrap: wrap; justify-content: center; margin-top: 60px; padding-top: 36px; border-top: 1px solid rgba(255,255,255,.12); }
     .hero-pill { display: flex; align-items: center; gap: 7px; color: rgba(255,255,255,.62); font-size: 13px; }
     .hero-pill::before { content: '•'; color: var(--green-400); font-size: 20px; line-height: 0; }
 
     /* ABOUT */
     .about { padding: 100px 0; background: var(--white); }
     .about-grid { display: grid; grid-template-columns: 1fr 1.05fr; gap: 80px; align-items: center; }
-    .about-img-wrap {
-      position: relative; background: var(--green-100); border-radius: 24px;
-      aspect-ratio: 4/5; display: flex; align-items: center; justify-content: center; overflow: hidden;
-    }
-    .emoji-brief { font-size: 100px; opacity: .55; user-select: none; animation: float 6s ease-in-out infinite; }
-    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
-    .about-img-wrap::before {
-      content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 40%;
-      background: linear-gradient(to top, rgba(45,106,79,.2) 0%, transparent 100%);
-    }
-    .about-stat {
-      position: absolute; bottom: 22px; right: 22px; background: var(--white);
-      border-radius: 14px; padding: 14px 20px; box-shadow: 0 8px 32px rgba(0,0,0,.12);
-      display: flex; align-items: center; gap: 12px;
-    }
+    .about-img-wrap { position: relative; background: var(--green-100); border-radius: 24px; aspect-ratio: 4/5; overflow: hidden; }
+    .about-img-wrap img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+    .about-stat { position: absolute; bottom: 22px; right: 22px; background: var(--white); border-radius: 14px; padding: 14px 20px; box-shadow: 0 8px 32px rgba(0,0,0,.12); display: flex; align-items: center; gap: 12px; }
     .about-stat-num { font-size: 28px; font-weight: 700; color: var(--green-600); line-height: 1; }
     .about-stat-label { font-size: 11px; color: var(--gray-500); line-height: 1.4; max-width: 80px; }
     .about-right h2 { font-family: var(--ff-serif); font-size: clamp(26px,3vw,38px); line-height: 1.2; margin-bottom: 22px; }
     .about-right h2 em { color: var(--green-500); font-style: italic; }
     .about-right p { color: var(--gray-500); font-size: 15px; line-height: 1.8; margin-bottom: 14px; }
-    .about-tags { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 28px; }
-    .about-tag {
-      background: var(--green-100); color: var(--green-700); font-size: 13px; font-weight: 500;
-      padding: 8px 16px; border-radius: 50px; border: 1px solid rgba(45,106,79,.18);
-    }
+    .cert-badge { display: inline-flex; align-items: center; gap: 8px; background: var(--green-100); color: var(--green-700); font-size: 13px; font-weight: 600; padding: 9px 18px; border-radius: 50px; border: 1px solid rgba(45,106,79,.2); margin-bottom: 16px; }
+    .about-tags { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px; }
+    .about-tag { display: inline-flex; align-items: center; gap: 7px; background: var(--green-100); color: var(--green-700); font-size: 13px; font-weight: 500; padding: 8px 16px; border-radius: 50px; border: 1px solid rgba(45,106,79,.18); }
 
-    /* SERVICES */
+    /* GARANTIAS */
+    .garantias { padding: 100px 0; background: var(--green-900); }
+    .garantias-header { text-align: center; margin-bottom: 56px; }
+    .garantias-header h2 { font-family: var(--ff-serif); font-size: clamp(26px,3.5vw,42px); color: var(--white); line-height: 1.2; margin-bottom: 12px; }
+    .garantias-header h2 em { color: var(--green-400); font-style: italic; }
+    .garantias-header p { color: rgba(255,255,255,.55); font-size: 15px; }
+    .gar-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+    .gar-card { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1); border-radius: 18px; padding: 28px; }
+    .gar-ico { width: 48px; height: 48px; border-radius: 12px; background: rgba(77,179,126,.15); display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
+    .gar-card h3 { font-size: 17px; font-weight: 600; color: var(--white); margin-bottom: 8px; }
+    .gar-card p { font-size: 14px; color: rgba(255,255,255,.6); line-height: 1.7; }
+
+    /* BANCOS */
+    .bancos { padding: 80px 0; background: var(--white); }
+    .bancos-header { text-align: center; margin-bottom: 44px; }
+    .bancos-header h2 { font-family: var(--ff-serif); font-size: clamp(24px,3vw,36px); line-height: 1.2; margin-bottom: 8px; }
+    .bancos-header h2 em { color: var(--green-500); font-style: italic; }
+    .carousel-wrap { overflow: hidden; position: relative; }
+    .carousel-wrap::before, .carousel-wrap::after { content: ''; position: absolute; top: 0; bottom: 0; width: 100px; z-index: 2; pointer-events: none; }
+    .carousel-wrap::before { left: 0; background: linear-gradient(to right, var(--white), transparent); }
+    .carousel-wrap::after  { right: 0; background: linear-gradient(to left,  var(--white), transparent); }
+    .carousel-track { display: flex; align-items: center; animation: scroll 30s linear infinite; width: max-content; }
+    .carousel-track:hover { animation-play-state: paused; }
+    @keyframes scroll { 0%{ transform: translateX(0) } 100%{ transform: translateX(-50%) } }
+    .bank-item { flex-shrink: 0; width: 160px; height: 80px; display: flex; align-items: center; justify-content: center; padding: 12px 22px; border-right: 1px solid var(--gray-200); }
+    .bank-item img { max-width: 110px; max-height: 44px; object-fit: contain; filter: grayscale(100%); opacity: .6; transition: all .3s; }
+    .bank-item:hover img { filter: grayscale(0%); opacity: 1; }
+
+    /* MODALIDADES */
     .services { padding: 100px 0; background: var(--green-50); }
     .services-header { text-align: center; margin-bottom: 56px; }
     .services-header h2 { font-family: var(--ff-serif); font-size: clamp(26px,3.5vw,42px); line-height: 1.2; margin-bottom: 14px; }
     .services-header h2 em { color: var(--green-500); font-style: italic; }
     .services-header p { color: var(--gray-500); max-width: 520px; margin: 0 auto; font-size: 15px; line-height: 1.75; }
     .cards-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
-    .service-card {
-      background: var(--white); border-radius: 18px; padding: 28px 26px;
-      border: 1px solid var(--gray-200); display: flex; flex-direction: column;
-      transition: box-shadow .25s, transform .25s;
-    }
+    .service-card { background: var(--white); border-radius: 18px; padding: 28px 26px; border: 1px solid var(--gray-200); display: flex; flex-direction: column; transition: box-shadow .25s, transform .25s; }
     .service-card:hover { box-shadow: 0 12px 40px rgba(26,58,42,.13); transform: translateY(-4px); }
-    .card-badge {
-      display: inline-block; background: var(--green-100); color: var(--green-700);
-      font-size: 9.5px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
-      padding: 4px 10px; border-radius: 4px; margin-bottom: 16px; align-self: flex-start;
-    }
-    .card-icon { font-size: 38px; margin-bottom: 12px; line-height: 1; }
+    .card-ico-wrap { width: 46px; height: 46px; border-radius: 12px; background: var(--green-100); display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
     .service-card h3 { font-size: 16px; font-weight: 600; margin-bottom: 9px; }
     .service-card p { font-size: 13.5px; color: var(--gray-500); line-height: 1.7; flex: 1; }
-    .card-more {
-      display: inline-flex; align-items: center; gap: 5px;
-      margin-top: 18px; color: var(--green-600); font-size: 13px; font-weight: 600;
-      transition: gap .2s, color .2s;
-    }
-    .card-more:hover { gap: 9px; color: var(--green-500); }
+    .card-more { display: inline-flex; align-items: center; gap: 5px; margin-top: 18px; color: var(--green-600); font-size: 13px; font-weight: 600; transition: gap .2s; }
+    .card-more:hover { gap: 9px; }
 
-    /* HOW */
+    /* COMO FUNCIONA */
     .how { padding: 100px 0; background: var(--white); }
     .how-header { margin-bottom: 52px; }
     .how-header h2 { font-family: var(--ff-serif); font-size: clamp(26px,3.5vw,42px); line-height: 1.2; margin-bottom: 12px; }
@@ -173,39 +117,37 @@
     .how-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
     .how-card { border-radius: 24px; padding: 40px 36px; }
     .how-card.light { background: var(--green-100); border: 1px solid rgba(45,106,79,.15); }
-    .how-card.dark { background: var(--green-800); color: var(--white); }
-    .how-icon { font-size: 34px; margin-bottom: 20px; display: block; }
+    .how-card.dark { background: var(--green-800); }
+    .how-card-ico { width: 52px; height: 52px; border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
+    .how-card.light .how-card-ico { background: rgba(45,106,79,.15); }
+    .how-card.dark .how-card-ico { background: rgba(255,255,255,.1); }
     .how-card h3 { font-family: var(--ff-serif); font-size: 22px; font-weight: 700; margin-bottom: 14px; line-height: 1.2; }
     .how-card h3 em { font-style: italic; }
+    .how-card.light h3 { color: var(--gray-900); }
     .how-card.light h3 em { color: var(--green-600); }
+    .how-card.dark h3 { color: var(--white); }
     .how-card.dark h3 em { color: var(--green-300); }
-    .how-card p { font-size: 14.5px; line-height: 1.8; }
-    .how-card.light p { color: var(--gray-700); }
-    .how-card.dark p { color: rgba(255,255,255,.72); }
+    .how-card.light p { font-size: 14.5px; line-height: 1.8; color: var(--gray-700); margin-bottom: 8px; }
+    .how-card.dark p { font-size: 14.5px; line-height: 1.8; color: rgba(255,255,255,.72); margin-bottom: 8px; }
+    .htags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+    .htag { display: inline-flex; align-items: center; gap: 6px; border-radius: 50px; padding: 6px 14px; font-size: 12px; font-weight: 500; }
+    .htag-l { background: rgba(45,106,79,.12); color: var(--green-700); }
+    .htag-d { background: rgba(255,255,255,.1); color: rgba(255,255,255,.75); border: 0.5px solid rgba(255,255,255,.15); }
+    .ag-btn { display: inline-flex; align-items: center; gap: 7px; background: var(--wpp); color: var(--white); font-size: 13px; font-weight: 600; padding: 10px 20px; border-radius: 50px; margin-top: 18px; transition: filter .2s; }
+    .ag-btn:hover { filter: brightness(1.08); }
 
     /* CTA */
-    .cta {
-      background: linear-gradient(135deg, var(--green-900) 0%, var(--green-700) 100%);
-      padding: 100px 24px; text-align: center; position: relative; overflow: hidden;
-    }
-    .cta::before {
-      content: ''; position: absolute; inset: 0;
-      background: radial-gradient(ellipse 60% 60% at 50% 50%, rgba(64,179,126,.18) 0%, transparent 70%);
-      pointer-events: none;
-    }
+    .cta { background: linear-gradient(135deg, var(--green-900) 0%, var(--green-700) 100%); padding: 100px 24px; text-align: center; position: relative; overflow: hidden; }
+    .cta::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 60% at 50% 50%, rgba(64,179,126,.18) 0%, transparent 70%); pointer-events: none; }
     .cta-inner { position: relative; z-index: 1; }
     .cta h2 { font-family: var(--ff-serif); font-size: clamp(28px,4.5vw,52px); color: var(--white); line-height: 1.15; margin-bottom: 18px; }
     .cta h2 em { color: var(--green-400); font-style: italic; }
-    .cta > .cta-inner > p { color: rgba(255,255,255,.68); font-size: 16px; margin-bottom: 44px; }
+    .cta-desc { color: rgba(255,255,255,.68); font-size: 16px; margin-bottom: 44px; }
     .cta-note { margin-top: 22px; color: rgba(255,255,255,.45); font-size: 13px; }
 
     /* FOOTER */
     footer { background: var(--gray-900); padding: 60px 24px 28px; }
-    .footer-inner {
-      max-width: 1080px; margin: 0 auto;
-      display: flex; justify-content: space-between; flex-wrap: wrap; gap: 40px;
-      padding-bottom: 44px; border-bottom: 1px solid rgba(255,255,255,.08); margin-bottom: 28px;
-    }
+    .footer-inner { max-width: 1080px; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 40px; padding-bottom: 44px; border-bottom: 1px solid rgba(255,255,255,.08); margin-bottom: 28px; }
     .footer-brand .fname { font-family: var(--ff-serif); font-size: 20px; color: var(--white); font-weight: 700; display: block; margin-bottom: 4px; }
     .footer-brand .fsub { font-size: 9.5px; letter-spacing: 2.5px; text-transform: uppercase; color: var(--green-400); display: block; margin-bottom: 16px; }
     .footer-brand p { color: rgba(255,255,255,.5); font-size: 13px; max-width: 260px; line-height: 1.75; }
@@ -216,12 +158,7 @@
     .footer-bottom { max-width: 1080px; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; color: rgba(255,255,255,.3); font-size: 12px; }
 
     /* FLOAT WPP */
-    .float-wpp {
-      position: fixed; bottom: 26px; right: 26px; z-index: 998;
-      width: 56px; height: 56px; background: var(--wpp); border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      box-shadow: 0 6px 24px rgba(37,211,102,.45); transition: transform .2s, box-shadow .2s;
-    }
+    .float-wpp { position: fixed; bottom: 26px; right: 26px; z-index: 998; width: 56px; height: 56px; background: var(--wpp); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 24px rgba(37,211,102,.45); transition: transform .2s, box-shadow .2s; }
     .float-wpp:hover { transform: scale(1.1); box-shadow: 0 10px 36px rgba(37,211,102,.6); }
 
     /* RESPONSIVE */
@@ -230,6 +167,7 @@
       .about-grid { grid-template-columns: 1fr; gap: 40px; }
       .about-img-wrap { aspect-ratio: 16/9; }
       .how-grid { grid-template-columns: 1fr; }
+      .gar-grid { grid-template-columns: 1fr; }
     }
     @media (max-width: 560px) {
       .nav-inner { padding: 0 18px; }
@@ -244,11 +182,11 @@
 <body>
 
 <!-- FLOAT WPP -->
-<a class="float-wpp" href="https://wa.me/5512996233776" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+<a class="float-wpp" href="https://wa.me/5512996233776" target="_blank" rel="noopener" aria-label="WhatsApp">
   <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a13.14 13.14 0 0 0-.569-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 0 0-3.48-8.413z"/></svg>
 </a>
 
-<!-- HEADER -->
+<!-- NAV -->
 <header>
   <div class="nav-inner">
     <div class="nav-brand">
@@ -278,7 +216,6 @@
     <div class="hero-pills">
       <span class="hero-pill">Atendimento Online para todo o Brasil</span>
       <span class="hero-pill">Presencial em Caraguatatuba</span>
-      <span class="hero-pill">7 modalidades de crédito</span>
     </div>
   </div>
 </section>
@@ -288,26 +225,83 @@
   <div class="container">
     <div class="about-grid">
       <div class="about-img-wrap">
-        <span class="emoji-brief">💼</span>
+        <img src="fernanda.png" alt="Fernanda Santana" />
         <div class="about-stat">
-          <span class="about-stat-num">100%</span>
-          <span class="about-stat-label">Compromisso com você</span>
+          <span class="about-stat-num">7</span>
+          <span class="about-stat-label">anos de experiência</span>
         </div>
       </div>
       <div class="about-right">
         <span class="section-label">Sobre mim</span>
         <h2>Sua especialista em <em>crédito</em> de confiança</h2>
-        <p>Sou Fernanda Santana, especialista em empréstimos com atendimento humanizado e foco nas reais necessidades de cada cliente.</p>
-        <p>Com expertise em diversas modalidades de crédito — do INSS a FGTS, de servidores públicos a beneficiários do Bolsa Família — encontro a melhor solução financeira para o seu perfil.</p>
-        <p>Meu compromisso é simplificar o que parece complicado: processo transparente, sem surpresas, do primeiro contato à aprovação do seu crédito.</p>
+        <p>Sou a Fernanda, trabalho com crédito há <strong>7 anos</strong> e tenho como prioridade oferecer um atendimento claro, ágil e de confiança — sempre buscando entender a necessidade de cada cliente e entregar a melhor solução.</p>
+        <p>Meu atendimento é baseado em <strong>transparência, agilidade e respeito</strong>. Explico tudo, apresento as melhores opções e não deixo você tomar nenhuma decisão sem entender o que está assinando.</p>
+        <p>Já ajudei clientes que estavam perdidos, sem saber por onde começar — e ver o alívio no final é o que me motiva todo dia.</p>
+        <div class="cert-badge">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2d6a4f" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="6"/><path d="M9 12l2 2 4-4"/><path d="M6.5 20.5L12 17l5.5 3.5-1.5-6L21 11l-6-.5L12 5l-3 5.5L3 11l4.5 3.5-1 6z"/></svg>
+          Certificada pela Febraban
+        </div>
         <div class="about-tags">
-          <span class="about-tag">✅ Atendimento humanizado</span>
-          <span class="about-tag">⚡ Processo ágil</span>
-          <span class="about-tag">🔍 Transparência total</span>
-          <span class="about-tag">🇧🇷 Todo o Brasil</span>
+          <span class="about-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2d6a4f" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+            Atendimento humanizado
+          </span>
+          <span class="about-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2d6a4f" stroke-width="2" stroke-linecap="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            Processo ágil
+          </span>
+          <span class="about-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2d6a4f" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            Transparência total
+          </span>
+          <span class="about-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2d6a4f" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            Todo o Brasil
+          </span>
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- GARANTIAS -->
+<section class="garantias" id="garantias">
+  <div class="container">
+    <div class="garantias-header">
+      <span class="section-label">Por que escolher</span>
+      <h2>Sem pegadinhas, <em>sem cobranças</em></h2>
+      <p>Do começo ao fim, do conforto da sua casa</p>
+    </div>
+    <div class="gar-grid">
+      <div class="gar-card">
+        <div class="gar-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4db37e" stroke-width="1.8" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg></div>
+        <h3>100% remoto</h3>
+        <p>Atendimento completo do começo ao fim sem sair de casa. Pelo WhatsApp ou videochamada, no seu tempo.</p>
+      </div>
+      <div class="gar-card">
+        <div class="gar-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4db37e" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg></div>
+        <h3>Sem taxa para liberar</h3>
+        <p>Não cobramos nenhum valor antecipado para liberar o seu crédito. Absolutamente zero.</p>
+      </div>
+      <div class="gar-card">
+        <div class="gar-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4db37e" stroke-width="1.8" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="9" y1="15" x2="15" y2="15"/></svg></div>
+        <h3>Contrato digital</h3>
+        <p>Assinatura 100% digital. Nenhum pagamento para assinar ou liberar o seu empréstimo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BANCOS -->
+<section class="bancos" id="parceiros">
+  <div class="container">
+    <div class="bancos-header">
+      <span class="section-label">Parceiros</span>
+      <h2>Bancos e <em>Fintechs</em> com quem trabalhamos</h2>
+    </div>
+  </div>
+  <div class="carousel-wrap">
+    <div class="carousel-track" id="carousel-track"></div>
   </div>
 </section>
 
@@ -321,52 +315,39 @@
     </div>
     <div class="cards-grid">
       <div class="service-card">
-        <span class="card-badge">PREF</span>
-        <span class="card-icon">🏛️</span>
-        <h3>Empréstimos para Prefeituras</h3>
-        <p>Crédito consignado para servidores municipais de prefeituras de todo o Brasil com taxas diferenciadas.</p>
+        <div class="card-ico-wrap"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2d6a4f" stroke-width="1.8" stroke-linecap="round"><path d="M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11M20 10v11M8 14v3M12 14v3M16 14v3"/></svg></div>
+        <h3>Consignado Público</h3>
+        <p>Para servidores municipais, estaduais e federais de todo o Brasil, com as melhores taxas do mercado.</p>
         <a class="card-more" href="https://wa.me/5512996233776" target="_blank" rel="noopener">Saiba mais →</a>
       </div>
       <div class="service-card">
-        <span class="card-badge">CLT</span>
-        <span class="card-icon">👷</span>
+        <div class="card-ico-wrap"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2d6a4f" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></div>
         <h3>Crédito do Trabalhador</h3>
-        <p>Linha de crédito especial para trabalhadores com carteira assinada, com condições facilitadas e aprovação rápida.</p>
+        <p>Para trabalhadores com carteira assinada, com condições facilitadas e aprovação rápida.</p>
         <a class="card-more" href="https://wa.me/5512996233776" target="_blank" rel="noopener">Saiba mais →</a>
       </div>
       <div class="service-card">
-        <span class="card-badge">GOV</span>
-        <span class="card-icon">🏢</span>
-        <h3>Empréstimos para Governos</h3>
-        <p>Crédito consignado para servidores estaduais e federais com as melhores taxas do mercado.</p>
-        <a class="card-more" href="https://wa.me/5512996233776" target="_blank" rel="noopener">Saiba mais →</a>
-      </div>
-      <div class="service-card">
-        <span class="card-badge">EL</span>
-        <span class="card-icon">⚡</span>
+        <div class="card-ico-wrap"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2d6a4f" stroke-width="1.8" stroke-linecap="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
         <h3>Conta de Luz</h3>
-        <p>Empréstimo consignado descontado diretamente na conta de energia elétrica, sem burocracia e sem precisar de banco.</p>
+        <p>Desconto direto na conta de energia elétrica, sem burocracia e sem precisar de banco.</p>
         <a class="card-more" href="https://wa.me/5512996233776" target="_blank" rel="noopener">Saiba mais →</a>
       </div>
       <div class="service-card">
-        <span class="card-badge">BF</span>
-        <span class="card-icon">☀️</span>
+        <div class="card-ico-wrap"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2d6a4f" stroke-width="1.8" stroke-linecap="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
         <h3>Bolsa Família</h3>
-        <p>Crédito especial para beneficiários do Bolsa Família com aprovação simplificada e desconto direto no benefício.</p>
+        <p>Aprovação simplificada e desconto direto no benefício para beneficiários do Bolsa Família.</p>
         <a class="card-more" href="https://wa.me/5512996233776" target="_blank" rel="noopener">Saiba mais →</a>
       </div>
       <div class="service-card">
-        <span class="card-badge">FGTS</span>
-        <span class="card-icon">💰</span>
+        <div class="card-ico-wrap"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2d6a4f" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
         <h3>FGTS Saque Aniversário</h3>
-        <p>Antecipação do saque-aniversário do FGTS. Receba agora o que você tem direito, com aprovação rápida e segura.</p>
+        <p>Antecipe o saque-aniversário do FGTS e receba agora com aprovação rápida e segura.</p>
         <a class="card-more" href="https://wa.me/5512996233776" target="_blank" rel="noopener">Saiba mais →</a>
       </div>
       <div class="service-card">
-        <span class="card-badge">INSS</span>
-        <span class="card-icon">👴</span>
+        <div class="card-ico-wrap"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2d6a4f" stroke-width="1.8" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
         <h3>Aposentados e Pensionistas</h3>
-        <p>Crédito consignado com desconto em folha para aposentados e pensionistas do INSS. Processo simples e seguro.</p>
+        <p>Consignado com desconto em folha para aposentados e pensionistas do INSS. Simples e seguro.</p>
         <a class="card-more" href="https://wa.me/5512996233776" target="_blank" rel="noopener">Saiba mais →</a>
       </div>
     </div>
@@ -383,14 +364,32 @@
     </div>
     <div class="how-grid">
       <div class="how-card light">
-        <span class="how-icon">🌐</span>
+        <div class="how-card-ico">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2d6a4f" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </div>
         <h3>Online para <em>Todo o Brasil</em></h3>
-        <p>Atendo clientes de qualquer estado brasileiro de forma <strong>100% digital</strong>. Todo o processo — da simulação à aprovação — é feito de forma remota, rápida e segura pelo WhatsApp ou videochamada.</p>
+        <p>Atendo qualquer estado de forma <strong>100% digital</strong>. Da simulação à aprovação, tudo pelo WhatsApp ou videochamada, sem sair de casa.</p>
+        <div class="htags">
+          <span class="htag htag-l">⏰ Seg a Sex · 9h às 18h</span>
+          <span class="htag htag-l">🌙 Fora desse horário? Posso estar de plantão!</span>
+          <span class="htag htag-l">💬 De todo modo, responderei assim que possível.</span>
+        </div>
       </div>
       <div class="how-card dark">
-        <span class="how-icon">📍</span>
+        <div class="how-card-ico">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6ee09e" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><circle cx="12" cy="16" r="2" fill="#6ee09e" stroke="none"/></svg>
+        </div>
         <h3>Presencial em <em>Caraguatatuba</em></h3>
-        <p>Moro e atendo presencialmente em <strong>Caraguatatuba – SP</strong>. Se preferir uma consulta olho no olho, estou aqui para você com toda atenção e cuidado que você merece.</p>
+        <p>Atendo presencialmente na nossa contabilidade em <strong>Caraguatatuba – SP</strong>. Para garantir qualidade no atendimento, o horário precisa ser agendado com antecedência.</p>
+        <p style="color:rgba(255,255,255,.45); font-size:13px;">Trabalhamos remotamente — atendimento presencial com hora marcada.</p>
+        <div class="htags">
+          <span class="htag htag-d">⏰ Seg a Sex · 9h às 18h</span>
+          <span class="htag htag-d">📅 Disponibilidade especial mediante agendamento</span>
+        </div>
+        <a class="ag-btn" href="https://wa.me/5512996233776?text=Olá!%20Gostaria%20de%20agendar%20um%20atendimento%20presencial." target="_blank" rel="noopener">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a13.14 13.14 0 0 0-.569-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 0 0-3.48-8.413z"/></svg>
+          Agendar horário
+        </a>
       </div>
     </div>
   </div>
@@ -400,12 +399,12 @@
 <section class="cta" id="contato">
   <div class="container cta-inner">
     <h2>Pronto para <em>resolver</em> seu crédito?</h2>
-    <p>Entre em contato agora e receba uma simulação gratuita e sem compromisso.</p>
+    <p class="cta-desc">Entre em contato agora e receba uma simulação gratuita e sem compromisso.</p>
     <a class="btn-primary" href="https://wa.me/5512996233776" target="_blank" rel="noopener">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a13.14 13.14 0 0 0-.569-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 0 0-3.48-8.413z"/></svg>
       Falar com Fernanda agora
     </a>
-    <p class="cta-note">Atendimento de segunda a sábado · Resposta rápida garantida</p>
+    <p class="cta-note">Atendimento de segunda a sexta · 9h às 18h · Resposta rápida garantida</p>
   </div>
 </section>
 
@@ -425,17 +424,65 @@
           (12) 99623-3776
         </a>
         <a href="#">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
           Caraguatatuba – SP (presencial)
         </a>
       </div>
     </div>
   </div>
   <div class="footer-bottom">
-    <span>© 2025 Fernanda Santana · Todos os direitos reservados</span>
+    <span>© 2025 Fernanda Santana · Todos os direitos reservados · <a href="/privacidade.html" style="color:rgba(255,255,255,.4);">Política de Privacidade</a></span>
     <span>CNPJ: 41.747.458/0001-52</span>
   </div>
+  <div style="max-width:1080px; margin: 20px auto 0; text-align:center;">
+    <span style="color:rgba(255,255,255,.2); font-size:11px;">Uma solução <a href="https://mourafinance.com.br" style="color:rgba(255,255,255,.35);">Grupo Moura</a></span>
+  </div>
 </footer>
+
+<!-- COOKIE BANNER -->
+<div id="cookie-banner" style="position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#111816;border-top:1px solid rgba(255,255,255,.1);padding:18px 28px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;font-family:'DM Sans',sans-serif;">
+  <p style="color:rgba(255,255,255,.75);font-size:13px;max-width:680px;line-height:1.6;margin:0;">
+    🍪 Utilizamos cookies e o Pixel do Facebook para melhorar sua experiência e exibir anúncios relevantes. Ao continuar navegando, você concorda com nossa <a href="/privacidade.html" style="color:#4db37e;text-decoration:underline;">Política de Privacidade</a>.
+  </p>
+  <div style="display:flex;gap:10px;flex-shrink:0;">
+    <button onclick="recusarCookies()" style="background:transparent;border:1.5px solid rgba(255,255,255,.3);color:rgba(255,255,255,.7);font-size:13px;font-weight:500;padding:9px 20px;border-radius:50px;cursor:pointer;font-family:inherit;">Recusar</button>
+    <button onclick="aceitarCookies()" style="background:#25D366;border:none;color:white;font-size:13px;font-weight:600;padding:9px 22px;border-radius:50px;cursor:pointer;font-family:inherit;">Aceitar cookies</button>
+  </div>
+</div>
+
+<script>
+  // Cookie banner
+  (function(){ if(localStorage.getItem('cookie_consent')) document.getElementById('cookie-banner').style.display='none'; })();
+  function aceitarCookies(){ localStorage.setItem('cookie_consent','accepted'); document.getElementById('cookie-banner').style.display='none'; }
+  function recusarCookies(){ localStorage.setItem('cookie_consent','rejected'); document.getElementById('cookie-banner').style.display='none'; }
+
+  // Carrossel de bancos
+  const bancos = [
+    { nome: 'BMG',            src: 'BANCO-BMG.png' },
+    { nome: 'Santander',      src: 'SANTANDER.png' },
+    { nome: 'Mercantil',      src: 'MERCANTIL.png' },
+    { nome: 'Banco do Brasil',src: 'BANCO_DO_BRASIL.png' },
+    { nome: 'Futuro',         src: 'FUTURO.png' },
+    { nome: 'Daycoval',       src: 'DAYCOVAL.png' },
+    { nome: 'Banrisul',       src: 'BANRISUL.png' },
+    { nome: 'Crefisa',        src: 'CREFISA.png' },
+    { nome: 'Banco Safra',    src: 'BANCO_SAFRA.png' },
+    { nome: 'C6 Bank',        src: 'C6.png' },
+    { nome: 'BRB',            src: 'BRB.png' },
+    { nome: 'Crefaz',         src: 'CREFAZ.png' },
+    { nome: 'Lotus',          src: 'LOTUS.png' },
+    { nome: 'Facta',          src: 'FACTA.png' },
+    { nome: 'iCred',          src: 'ICRED.png' },
+    { nome: 'V8 Digital',     src: 'V8DIGITAL.png' },
+  ];
+  const track = document.getElementById('carousel-track');
+  [...bancos, ...bancos].forEach(b => {
+    const item = document.createElement('div');
+    item.className = 'bank-item';
+    item.innerHTML = `<img src="${b.src}" alt="${b.nome}" loading="lazy" />`;
+    track.appendChild(item);
+  });
+</script>
 
 </body>
 </html>
