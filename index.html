@@ -22,16 +22,12 @@
     a { text-decoration: none; color: inherit; }
     .container { max-width: 1080px; margin: 0 auto; padding: 0 28px; }
     .section-label { display: inline-block; font-size: 10.5px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: var(--green-400); margin-bottom: 14px; }
-
-    /* NAV */
     header { position: fixed; top: 0; left: 0; right: 0; z-index: 999; background: rgba(15,35,24,.97); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255,255,255,.06); }
     .nav-inner { max-width: 1080px; margin: 0 auto; padding: 0 28px; height: 66px; display: flex; align-items: center; justify-content: space-between; }
     .nav-brand .name { font-family: var(--ff-serif); font-size: 17px; font-weight: 700; color: var(--white); display: block; }
     .nav-brand .sub { font-size: 9px; font-weight: 500; letter-spacing: 2.5px; text-transform: uppercase; color: var(--green-400); display: block; }
     .btn-wpp-nav { display: flex; align-items: center; gap: 8px; background: var(--wpp); color: var(--white); font-size: 13px; font-weight: 600; padding: 9px 22px; border-radius: 50px; transition: filter .2s, transform .15s; }
     .btn-wpp-nav:hover { filter: brightness(1.08); transform: translateY(-1px); }
-
-    /* HERO */
     .hero { min-height: 100vh; padding: 140px 24px 80px; display: flex; align-items: center; justify-content: center; background: radial-gradient(ellipse 80% 60% at 50% 30%, rgba(64,179,126,.22) 0%, transparent 70%), linear-gradient(155deg, var(--green-900) 0%, var(--green-700) 55%, var(--green-800) 100%); text-align: center; position: relative; overflow: hidden; }
     .hero::after { content: ''; position: absolute; inset: 0; pointer-events: none; opacity: .45; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%234db37e' fill-opacity='0.06'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E") repeat; }
     .hero-content { position: relative; z-index: 1; max-width: 680px; }
@@ -49,8 +45,6 @@
     .hero-pills { display: flex; gap: 28px; flex-wrap: wrap; justify-content: center; margin-top: 60px; padding-top: 36px; border-top: 1px solid rgba(255,255,255,.12); }
     .hero-pill { display: flex; align-items: center; gap: 7px; color: rgba(255,255,255,.62); font-size: 13px; }
     .hero-pill::before { content: '•'; color: var(--green-400); font-size: 20px; line-height: 0; }
-
-    /* ABOUT */
     .about { padding: 100px 0; background: var(--white); }
     .about-grid { display: grid; grid-template-columns: 1fr 1.05fr; gap: 80px; align-items: center; }
     .about-img-wrap { position: relative; background: var(--green-100); border-radius: 24px; aspect-ratio: 4/5; overflow: hidden; }
@@ -61,11 +55,8 @@
     .about-right h2 { font-family: var(--ff-serif); font-size: clamp(26px,3vw,38px); line-height: 1.2; margin-bottom: 22px; }
     .about-right h2 em { color: var(--green-500); font-style: italic; }
     .about-right p { color: var(--gray-500); font-size: 15px; line-height: 1.8; margin-bottom: 14px; }
-    .cert-badge { display: inline-flex; align-items: center; gap: 8px; background: var(--green-100); color: var(--green-700); font-size: 13px; font-weight: 600; padding: 9px 18px; border-radius: 50px; border: 1px solid rgba(45,106,79,.2); margin-bottom: 16px; }
-    .about-tags { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px; }
-    .about-tag { display: inline-flex; align-items: center; gap: 7px; background: var(--green-100); color: var(--green-700); font-size: 13px; font-weight: 500; padding: 8px 16px; border-radius: 50px; border: 1px solid rgba(45,106,79,.18); }
-
-    /* GARANTIAS */
+    .about-tags { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 16px; }
+    .about-tag { background: var(--green-100); color: var(--green-700); font-size: 13px; font-weight: 500; padding: 8px 18px; border-radius: 50px; border: 1px solid rgba(45,106,79,.18); }
     .garantias { padding: 100px 0; background: var(--green-900); }
     .garantias-header { text-align: center; margin-bottom: 56px; }
     .garantias-header h2 { font-family: var(--ff-serif); font-size: clamp(26px,3.5vw,42px); color: var(--white); line-height: 1.2; margin-bottom: 12px; }
@@ -76,8 +67,6 @@
     .gar-ico { width: 48px; height: 48px; border-radius: 12px; background: rgba(77,179,126,.15); display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
     .gar-card h3 { font-size: 17px; font-weight: 600; color: var(--white); margin-bottom: 8px; }
     .gar-card p { font-size: 14px; color: rgba(255,255,255,.6); line-height: 1.7; }
-
-    /* BANCOS */
     .bancos { padding: 80px 0; background: var(--white); }
     .bancos-header { text-align: center; margin-bottom: 44px; }
     .bancos-header h2 { font-family: var(--ff-serif); font-size: clamp(24px,3vw,36px); line-height: 1.2; margin-bottom: 8px; }
@@ -92,8 +81,6 @@
     .bank-item { flex-shrink: 0; width: 160px; height: 80px; display: flex; align-items: center; justify-content: center; padding: 12px 22px; border-right: 1px solid var(--gray-200); }
     .bank-item img { max-width: 110px; max-height: 44px; object-fit: contain; filter: grayscale(100%); opacity: .6; transition: all .3s; }
     .bank-item:hover img { filter: grayscale(0%); opacity: 1; }
-
-    /* MODALIDADES */
     .services { padding: 100px 0; background: var(--green-50); }
     .services-header { text-align: center; margin-bottom: 56px; }
     .services-header h2 { font-family: var(--ff-serif); font-size: clamp(26px,3.5vw,42px); line-height: 1.2; margin-bottom: 14px; }
@@ -107,8 +94,6 @@
     .service-card p { font-size: 13.5px; color: var(--gray-500); line-height: 1.7; flex: 1; }
     .card-more { display: inline-flex; align-items: center; gap: 5px; margin-top: 18px; color: var(--green-600); font-size: 13px; font-weight: 600; transition: gap .2s; }
     .card-more:hover { gap: 9px; }
-
-    /* COMO FUNCIONA */
     .how { padding: 100px 0; background: var(--white); }
     .how-header { margin-bottom: 52px; }
     .how-header h2 { font-family: var(--ff-serif); font-size: clamp(26px,3.5vw,42px); line-height: 1.2; margin-bottom: 12px; }
@@ -135,8 +120,6 @@
     .htag-d { background: rgba(255,255,255,.1); color: rgba(255,255,255,.75); border: 0.5px solid rgba(255,255,255,.15); }
     .ag-btn { display: inline-flex; align-items: center; gap: 7px; background: var(--wpp); color: var(--white); font-size: 13px; font-weight: 600; padding: 10px 20px; border-radius: 50px; margin-top: 18px; transition: filter .2s; }
     .ag-btn:hover { filter: brightness(1.08); }
-
-    /* CTA */
     .cta { background: linear-gradient(135deg, var(--green-900) 0%, var(--green-700) 100%); padding: 100px 24px; text-align: center; position: relative; overflow: hidden; }
     .cta::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 60% at 50% 50%, rgba(64,179,126,.18) 0%, transparent 70%); pointer-events: none; }
     .cta-inner { position: relative; z-index: 1; }
@@ -144,8 +127,6 @@
     .cta h2 em { color: var(--green-400); font-style: italic; }
     .cta-desc { color: rgba(255,255,255,.68); font-size: 16px; margin-bottom: 44px; }
     .cta-note { margin-top: 22px; color: rgba(255,255,255,.45); font-size: 13px; }
-
-    /* FOOTER */
     footer { background: var(--gray-900); padding: 60px 24px 28px; }
     .footer-inner { max-width: 1080px; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 40px; padding-bottom: 44px; border-bottom: 1px solid rgba(255,255,255,.08); margin-bottom: 28px; }
     .footer-brand .fname { font-family: var(--ff-serif); font-size: 20px; color: var(--white); font-weight: 700; display: block; margin-bottom: 4px; }
@@ -155,17 +136,15 @@
     .footer-contact-links { display: flex; flex-direction: column; gap: 10px; }
     .footer-contact-links a { color: rgba(255,255,255,.6); font-size: 14px; display: flex; align-items: center; gap: 9px; transition: color .2s; }
     .footer-contact-links a:hover { color: var(--green-400); }
+    .footer-legal { max-width: 1080px; margin: 0 auto; padding-bottom: 28px; border-bottom: 1px solid rgba(255,255,255,.06); margin-bottom: 20px; }
+    .footer-legal p { color: rgba(255,255,255,.35); font-size: 12px; line-height: 1.8; text-align: center; }
     .footer-bottom { max-width: 1080px; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; color: rgba(255,255,255,.3); font-size: 12px; }
-
-    /* FLOAT WPP */
     .float-wpp { position: fixed; bottom: 26px; right: 26px; z-index: 998; width: 56px; height: 56px; background: var(--wpp); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 24px rgba(37,211,102,.45); transition: transform .2s, box-shadow .2s; }
     .float-wpp:hover { transform: scale(1.1); box-shadow: 0 10px 36px rgba(37,211,102,.6); }
-
-    /* RESPONSIVE */
     @media (max-width: 860px) {
       .cards-grid { grid-template-columns: repeat(2,1fr); }
       .about-grid { grid-template-columns: 1fr; gap: 40px; }
-      .about-img-wrap { aspect-ratio: 16/9; }
+      .about-img-wrap { aspect-ratio: 3/4; max-height: 480px; }
       .how-grid { grid-template-columns: 1fr; }
       .gar-grid { grid-template-columns: 1fr; }
     }
@@ -181,12 +160,10 @@
 </head>
 <body>
 
-<!-- FLOAT WPP -->
 <a class="float-wpp" href="https://wa.me/5512996233776" target="_blank" rel="noopener" aria-label="WhatsApp">
   <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a13.14 13.14 0 0 0-.569-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 0 0-3.48-8.413z"/></svg>
 </a>
 
-<!-- NAV -->
 <header>
   <div class="nav-inner">
     <div class="nav-brand">
@@ -200,7 +177,6 @@
   </div>
 </header>
 
-<!-- HERO -->
 <section class="hero" id="inicio">
   <div class="hero-content">
     <div class="hero-badge"><span class="dot"></span>Atendimento em todo o Brasil</div>
@@ -220,7 +196,6 @@
   </div>
 </section>
 
-<!-- SOBRE MIM -->
 <section class="about" id="sobre">
   <div class="container">
     <div class="about-grid">
@@ -237,34 +212,21 @@
         <p>Sou a Fernanda, trabalho com crédito há <strong>7 anos</strong> e tenho como prioridade oferecer um atendimento claro, ágil e de confiança — sempre buscando entender a necessidade de cada cliente e entregar a melhor solução.</p>
         <p>Meu atendimento é baseado em <strong>transparência, agilidade e respeito</strong>. Explico tudo, apresento as melhores opções e não deixo você tomar nenhuma decisão sem entender o que está assinando.</p>
         <p>Já ajudei clientes que estavam perdidos, sem saber por onde começar — e ver o alívio no final é o que me motiva todo dia.</p>
-        <div class="cert-badge">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2d6a4f" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="6"/><path d="M9 12l2 2 4-4"/><path d="M6.5 20.5L12 17l5.5 3.5-1.5-6L21 11l-6-.5L12 5l-3 5.5L3 11l4.5 3.5-1 6z"/></svg>
-          Certificada pela Febraban
+        <div style="background:var(--green-100);border:1px solid rgba(45,106,79,.2);border-radius:16px;padding:18px 20px;margin-bottom:20px;">
+          <div style="color:var(--green-700);font-size:14px;font-weight:700;margin-bottom:8px;">🏅 Correspondente Bancária autorizada · Febraban/CRCP</div>
+          <p style="font-size:12.5px;color:var(--gray-500);line-height:1.7;margin:0;">A Febraban é a Federação Brasileira de Bancos — a certificação garante que você está sendo atendido por um profissional de crédito reconhecido e autorizado pelo mercado financeiro brasileiro.</p>
         </div>
         <div class="about-tags">
-          <span class="about-tag">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2d6a4f" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
-            Atendimento humanizado
-          </span>
-          <span class="about-tag">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2d6a4f" stroke-width="2" stroke-linecap="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-            Processo ágil
-          </span>
-          <span class="about-tag">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2d6a4f" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-            Transparência total
-          </span>
-          <span class="about-tag">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2d6a4f" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-            Todo o Brasil
-          </span>
+          <span class="about-tag">Atendimento humanizado</span>
+          <span class="about-tag">Processo ágil</span>
+          <span class="about-tag">Transparência total</span>
+          <span class="about-tag">Todo o Brasil</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- GARANTIAS -->
 <section class="garantias" id="garantias">
   <div class="container">
     <div class="garantias-header">
@@ -292,7 +254,6 @@
   </div>
 </section>
 
-<!-- BANCOS -->
 <section class="bancos" id="parceiros">
   <div class="container">
     <div class="bancos-header">
@@ -305,7 +266,6 @@
   </div>
 </section>
 
-<!-- MODALIDADES -->
 <section class="services" id="modalidades">
   <div class="container">
     <div class="services-header">
@@ -354,7 +314,6 @@
   </div>
 </section>
 
-<!-- COMO FUNCIONA -->
 <section class="how" id="como-funciona">
   <div class="container">
     <div class="how-header">
@@ -364,9 +323,7 @@
     </div>
     <div class="how-grid">
       <div class="how-card light">
-        <div class="how-card-ico">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2d6a4f" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-        </div>
+        <div class="how-card-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2d6a4f" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
         <h3>Online para <em>Todo o Brasil</em></h3>
         <p>Atendo qualquer estado de forma <strong>100% digital</strong>. Da simulação à aprovação, tudo pelo WhatsApp ou videochamada, sem sair de casa.</p>
         <div class="htags">
@@ -376,9 +333,7 @@
         </div>
       </div>
       <div class="how-card dark">
-        <div class="how-card-ico">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6ee09e" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><circle cx="12" cy="16" r="2" fill="#6ee09e" stroke="none"/></svg>
-        </div>
+        <div class="how-card-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6ee09e" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><circle cx="12" cy="16" r="2" fill="#6ee09e" stroke="none"/></svg></div>
         <h3>Presencial em <em>Caraguatatuba</em></h3>
         <p>Atendo presencialmente na nossa contabilidade em <strong>Caraguatatuba – SP</strong>. Para garantir qualidade no atendimento, o horário precisa ser agendado com antecedência.</p>
         <p style="color:rgba(255,255,255,.45); font-size:13px;">Trabalhamos remotamente — atendimento presencial com hora marcada.</p>
@@ -386,7 +341,7 @@
           <span class="htag htag-d">⏰ Seg a Sex · 9h às 18h</span>
           <span class="htag htag-d">📅 Disponibilidade especial mediante agendamento</span>
         </div>
-        <a class="ag-btn" href="https://wa.me/5512996233776?text=Olá!%20Gostaria%20de%20agendar%20um%20atendimento%20presencial." target="_blank" rel="noopener">
+        <a class="ag-btn" href="https://wa.me/5512996233776?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20atendimento%20presencial." target="_blank" rel="noopener">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a13.14 13.14 0 0 0-.569-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 0 0-3.48-8.413z"/></svg>
           Agendar horário
         </a>
@@ -395,7 +350,6 @@
   </div>
 </section>
 
-<!-- CTA -->
 <section class="cta" id="contato">
   <div class="container cta-inner">
     <h2>Pronto para <em>resolver</em> seu crédito?</h2>
@@ -408,7 +362,6 @@
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <div class="footer-inner">
     <div class="footer-brand">
@@ -430,6 +383,9 @@
       </div>
     </div>
   </div>
+  <div class="footer-legal">
+    <p>Atuando como Correspondente Bancária, conforme a Resolução nº 3.954/2011 do Banco Central do Brasil. Nosso serviço é totalmente gratuito e não cobramos qualquer tipo de taxa para liberação de crédito. A análise e a liberação dos valores são feitas exclusivamente pelos bancos parceiros.</p>
+  </div>
   <div class="footer-bottom">
     <span>© 2025 Fernanda Santana · Todos os direitos reservados · <a href="/privacidade.html" style="color:rgba(255,255,255,.4);">Política de Privacidade</a></span>
     <span>CNPJ: 41.747.458/0001-52</span>
@@ -439,7 +395,6 @@
   </div>
 </footer>
 
-<!-- COOKIE BANNER -->
 <div id="cookie-banner" style="position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#111816;border-top:1px solid rgba(255,255,255,.1);padding:18px 28px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;font-family:'DM Sans',sans-serif;">
   <p style="color:rgba(255,255,255,.75);font-size:13px;max-width:680px;line-height:1.6;margin:0;">
     🍪 Utilizamos cookies e o Pixel do Facebook para melhorar sua experiência e exibir anúncios relevantes. Ao continuar navegando, você concorda com nossa <a href="/privacidade.html" style="color:#4db37e;text-decoration:underline;">Política de Privacidade</a>.
@@ -451,38 +406,34 @@
 </div>
 
 <script>
-  // Cookie banner
   (function(){ if(localStorage.getItem('cookie_consent')) document.getElementById('cookie-banner').style.display='none'; })();
   function aceitarCookies(){ localStorage.setItem('cookie_consent','accepted'); document.getElementById('cookie-banner').style.display='none'; }
   function recusarCookies(){ localStorage.setItem('cookie_consent','rejected'); document.getElementById('cookie-banner').style.display='none'; }
-
-  // Carrossel de bancos
   const bancos = [
-    { nome: 'BMG',            src: 'BANCO-BMG.png.png' },
-    { nome: 'Santander',      src: 'SANTANDER.png.png' },
-    { nome: 'Mercantil',      src: 'MERCANTIL.png.png' },
-    { nome: 'Banco do Brasil',src: 'BANCO_DO_BRASIL.png.png' },
-    { nome: 'Futuro',         src: 'FUTURO.png.png' },
-    { nome: 'Daycoval',       src: 'DAYCOVAL.png.png' },
-    { nome: 'Banrisul',       src: 'BANRISUL.png.png' },
-    { nome: 'Crefisa',        src: 'CREFISA.png.png' },
-    { nome: 'Banco Safra',    src: 'BANCO_SAFRA.png.png' },
-    { nome: 'C6 Bank',        src: 'C6.png.png' },
-    { nome: 'BRB',            src: 'BRB.png.png' },
-    { nome: 'Crefaz',         src: 'CREFAZ.png.png' },
-    { nome: 'Lotus',          src: 'LOTUS.png.png' },
-    { nome: 'Facta',          src: 'FACTA.png.png' },
-    { nome: 'iCred',          src: 'ICRED.png.png' },
-    { nome: 'V8 Digital',     src: 'V8DIGITAL.png.png' },
+    { nome: 'BMG', src: 'BANCO-BMG.png.png' },
+    { nome: 'Santander', src: 'SANTANDER.png.png' },
+    { nome: 'Mercantil', src: 'MERCANTIL.png.png' },
+    { nome: 'Banco do Brasil', src: 'BANCO_DO_BRASIL.png.png' },
+    { nome: 'Futuro', src: 'FUTURO.png.png' },
+    { nome: 'Daycoval', src: 'DAYCOVAL.png.png' },
+    { nome: 'Banrisul', src: 'BANRISUL.png.png' },
+    { nome: 'Crefisa', src: 'CREFISA.png.png' },
+    { nome: 'Banco Safra', src: 'BANCO_SAFRA.png.png' },
+    { nome: 'C6 Bank', src: 'C6.png.png' },
+    { nome: 'BRB', src: 'BRB.png.png' },
+    { nome: 'Crefaz', src: 'CREFAZ.png.png' },
+    { nome: 'Lotus', src: 'LOTUS.png.png' },
+    { nome: 'Facta', src: 'FACTA.png.png' },
+    { nome: 'iCred', src: 'ICRED.png.png' },
+    { nome: 'V8 Digital', src: 'V8DIGITAL.png.png' },
   ];
   const track = document.getElementById('carousel-track');
   [...bancos, ...bancos].forEach(b => {
     const item = document.createElement('div');
     item.className = 'bank-item';
-    item.innerHTML = `<img src="${b.src}" alt="${b.nome}" loading="lazy" />`;
+    item.innerHTML = '<img src="' + b.src + '" alt="' + b.nome + '" loading="lazy" />';
     track.appendChild(item);
   });
 </script>
-
 </body>
 </html>
